@@ -1,0 +1,41 @@
+{
+  "name": "testcontainers-iris",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "testcontainers IRIS",
+  "main": "./build/index.js",
+  "keywords": [
+    "iris",
+    "intersystems",
+    "testing",
+    "docker",
+    "testcontainers"
+  ],
+  "homepage": "https://github.com/caretdeve/testcontainers-iris-node#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caretdeve/testcontainers-iris-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caretdeve/testcontainers-iris-node/issues"
+  },
+  "scripts": {
+    "build": "rimraf build && tsc",
+    "test": "vitest run"
+  },
+  "files": [
+    "build"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "testcontainers": "^11.2.1"
+  },
+  "devDependencies": {
+    "@intersystems/intersystems-iris-native": "^2.0.1",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
