@@ -5,7 +5,7 @@
       "ES2023"
     ],
     "target": "ES2023",
-    "module": "commonjs",
+    "module": "ESNext",
     "declaration": true,
     "sourceMap": true,
     "strict": true,

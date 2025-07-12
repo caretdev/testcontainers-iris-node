@@ -1,7 +1,7 @@
 {
   "name": "testcontainers-iris",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "testcontainers IRIS",
   "main": "./build/index.js",
   "keywords": [
@@ -11,6 +11,16 @@
     "docker",
     "testcontainers"
   ],
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "node": {
+        "types": "./build/index.d.ts",
+        "import": "./build/index.js",
+        "require": "./build/index.js"
+      }
+    }
+  },
   "homepage": "https://github.com/caretdeve/testcontainers-iris-node#readme",
   "repository": {
     "type": "git",
