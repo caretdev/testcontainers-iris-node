@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
     "incremental": false,
-    "lib": [
-      "ES2023"
-    ],
+    "lib": ["ES2023"],
     "target": "ES2023",
-    "module": "ESNext",
+    "types": [
+      "vitest/globals"
+    ],
+    "module": "commonjs",
     "declaration": true,
     "sourceMap": true,
     "strict": true,
@@ -16,10 +17,11 @@
     "noImplicitOverride": true,
     "composite": false,
     "rootDir": "src",
-    "outDir": "build"
+    "outDir": "build",
   },
   "exclude": [
     "build",
     "vitest.config.ts",
+    "src/**/*.test.ts"
   ]
 }

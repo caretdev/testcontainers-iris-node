@@ -1,9 +1,7 @@
 {
   "name": "testcontainers-iris",
-  "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "description": "testcontainers IRIS",
-  "main": "./build/index.js",
   "keywords": [
     "iris",
     "intersystems",
@@ -11,16 +9,8 @@
     "docker",
     "testcontainers"
   ],
-  "exports": {
-    ".": {
-      "types": "./build/index.d.ts",
-      "node": {
-        "types": "./build/index.d.ts",
-        "import": "./build/index.js",
-        "require": "./build/index.js"
-      }
-    }
-  },
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
   "homepage": "https://github.com/caretdeve/testcontainers-iris-node#readme",
   "repository": {
     "type": "git",
@@ -34,7 +24,9 @@
     "test": "vitest run"
   },
   "files": [
-    "build"
+    "build",
+    "LICENSE",
+    "README.md"
   ],
   "author": "",
   "license": "MIT",
